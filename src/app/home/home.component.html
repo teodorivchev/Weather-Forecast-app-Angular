@@ -1,0 +1,14 @@
+<div>
+  <div class="info">
+    <h1><strong>City: </strong>{{weather.location.name}}</h1>
+    <h2><strong>Country: </strong>{{weather.location.country}}</h2>
+    
+    <img src="{{weather.current.condition.icon}}" alt="">{{weather.current.condition.text}}
+    <p>Temperature: {{weather.current.temp_c}}°C</p>
+    <p>Last Update: {{weather.current.last_updated}} </p>
+    <button class="btn btn-success"  (click)="searchNew()">new search</button>
+
+  </div>
+
+
+</div>

@@ -1,0 +1,17 @@
+<div class="container">
+    <app-root></app-root>
+  <h1 class="text-center primary "> Enter City</h1>
+  <form >
+    <div class="form-group">
+      <input ref-Searchcity type="text" class="form-control" name="city" [(ngModel)]="city">
+
+
+    </div>
+
+    <button class="btn btn-success" [disabled]="!Searchcity.value" (click)="search()">Search</button>
+
+
+
+  </form>
+
+</div>
